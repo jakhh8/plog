@@ -1,7 +1,7 @@
 use plog::{debug, error, info, trace, warn};
 
 fn main() {
-    plog::init();
+    plog::init().expect("Failed to initialize plog!");
 
     trace!("trace!");
     debug!("debug!");

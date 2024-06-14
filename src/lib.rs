@@ -7,7 +7,7 @@ pub use log::{debug, error, info, trace, warn, LevelFilter};
 pub struct Logger {}
 
 impl Log for Logger {
-    fn enabled(&self, metadata: &log::Metadata) -> bool {
+    fn enabled(&self, _metadata: &log::Metadata) -> bool {
         true
     }
 
